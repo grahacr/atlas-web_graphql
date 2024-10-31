@@ -4,10 +4,7 @@ const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 const app = express();
 
-mongoose.connect('mongodb+srv://courtneygraham918:pSZ8paY7nNu2FsIC@cluster0.pwroh.mongodb.net/graphQL', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+mongoose.connect('mongodb+srv://courtneygraham918:pSZ8paY7nNu2FsIC@graphql.pwroh.mongodb.net/?retryWrites=true&w=majority&appName=graphQL',);
 
 mongoose.connection.once('open', () =>
   console.log('connected to database')
