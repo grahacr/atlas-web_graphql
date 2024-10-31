@@ -1,5 +1,5 @@
 {
-    projects(id: "1") {
+    project(id: "1") {
         title
         weight
         description
