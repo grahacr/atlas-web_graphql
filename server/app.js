@@ -4,7 +4,11 @@ const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 const app = express();
 
-mongoose.connect('mongodb+srv://graphql.pwroh.mongodb.net/" --apiVersion 1 --username courtneygraham918 --password pSZ8paY7nNu2FsIC', { UseNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://courtneygraham918:pSZ8paY7nNu2FsIC@cluster0.pwroh.mongodb.net/graphQL', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
 mongoose.connection.once('open', () =>
   console.log('connected to database')
 );
